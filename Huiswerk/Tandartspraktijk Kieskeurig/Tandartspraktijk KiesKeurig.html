@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<title>Tandartsafspraak</title>
+</head>
+<body>
+<h2>Afspraak maken</h2>
+Tandartspraktijk De Liefde is een biologische praktijk in Amsterdam. Naast holistische tandheelkunde kunt u bij ons ook terecht voor algemene tandheelkunde <br>
+en diverse specialisaties. Wij zijn een metaalvrije praktijk en werken met een clean up systeem. Bij ons staat een behandeling met lichaamsvriendelijke materialen voorop. <br>
+Hierbij is het uitgangspunt dat het lichaam zo min mogelijk door tandheelkundige ingrepen wordt belast. Op deze pagina kunt u een afspraak plannen bij ons. <br> <br>
+<img src="Tandarts.jpg" alt="Tandarts" title="Tandarts" width="300" height="400">
+<img src="Tndenborstel.jpg" alt="tandenborstel" title="tandenborstel" width="300" height="400">
+<img src="Tandenpoetsen.jpg" alt="tanden poetsen" title="tanden poetsen" width="300" height="400">
+<form id="contactform" action="https://formspree.io/f/mzbwppvw" method="post">
+<fieldset>
+<legend> <strong> Persoonlijke gegevens</strong> </legend><br>
+<label for="naam">Naam:</label>
+<input type="text" id="naam" name="naam"><br><br>
+<label for="adres">Adres:</label>
+<input type="text" id="adres" name="adres"><br><br>
+<label for="postcode">Postcode:</label>
+<input type="text" id="postcode" name="postcode"><br><br>
+<label for="woonplaats">Woonplaats:</label>
+<input type="text" id="woonplaats" name="woonplaats"><br><br>
+<label for="telefoonnummer">Telefoonnummer:</label>
+<input type="tel" id="telefoonnummer" name="telefoonnummer"><br><br>
+<label for="email">Emailadres:</label>
+<input type="email" id="email" name="emailadres"> <br><br>
+<input type="radio" name="geslacht" value="man" checked>Man
+<input type="radio" name="geslacht" value="vrouw">Vrouw
+<input type="radio" name="geslacht" value="anders">Anders <br><br>
+<label for="date">Geboortedatum:</label>
+<input type="date" id="date" name="geboortedatum" max="2080-12-31"> <br><br>
+</fieldset>
+<fieldset>
+<legend> <strong> Beschrijf uw klachten </strong> </legend><br>
+<b> Selecteer uw klacht</b><br><br>
+<input type="checkbox" name="onderwerpen" value="ja">Kiespijn
+<input type="checkbox" name="onderwerpen" value="ja">Ontsteking
+<input type="checkbox" name="onderwerpen" value="ja">Tand afgebroken
+<input type="checkbox" name="onderwerpen" value="ja">Anders <br><br>
+<label for="afbeelding">Upload hier uw foto van de klacht:</label>
+<input type="file" id="afbeelding" name="foto"><br><br>
+</fieldset>
+<fieldset>
+<legend> <strong> Toelichting van uw klacht </strong> </legend><br>
+<textarea name ="bericht" maxlength ="1500"></textarea> <br><br>
+<b> Selecteer uw gewenste afspraakdatum</b><br><br>
+<input type="date" name="datum" max="2080-12-31"><br><br>
+</fieldset><br>
+<input type="submit" value="Verzend">
+</form>
+</body>
+</html>
